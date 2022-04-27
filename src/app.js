@@ -19,6 +19,12 @@ const {} = require("./db");
 
 app.post("/chat", (req, res) => {
   // successResponse.template.outputs[0].simpleText.text = process.env.msg || '여기에 텍스트를 입력'
+  items = JSON.parse(process.env.items || "[]");
+  if (items.length <= 0) {
+    res.send(errorResponse);
+    return;
+  }
+  successResponse.template.outputs[0].carousel.items = items;
   successResponse.template.quickReplies = JSON.parse(
     process.env.quickReplies || "[]"
   );
