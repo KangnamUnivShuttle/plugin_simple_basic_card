@@ -32,8 +32,8 @@ const successResponse = {
           type: "basicCard",
           items: [
             // {
-            //   title: "보물상자",
-            //   description: "보물상자 안에는 뭐가 있을까",
+            //   title: "강남대학교 방향",
+            //   description: "이공관으로 향하는 셔틀버스입니다.",
             //   thumbnail: {
             //     imageUrl:
             //       "http://k.kakaocdn.net/dn/83BvP/bl20duRC1Q1/lj3JUcmrzC53YIjNDkqbWK/i_6piz1p.jpg",
